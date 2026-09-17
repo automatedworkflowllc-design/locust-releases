@@ -8,11 +8,30 @@ This repository carries the installers and the update feed. The source is not
 public yet, so **[Issues here](https://github.com/automatedworkflowllc-design/locust-releases/issues)
 is the right place for bugs and questions.**
 
+## What a teammate is
+
+A teammate is a name, a role and a route — a runtime and a model you picked.
+Give one a folder and a job and it works there, and the whole run is written
+to a local ledger you can reopen.
+
+They are not separate chat windows. A teammate can hand work to another one
+by name, and the reply comes back into the conversation that asked; each
+answers on its own route, so you can put two models on the same problem and
+see both. A **Chief of Staff** takes what you asked for, gives it to the
+teammate whose role fits, and reports back in one message. Conversations can
+be grouped, and a group's standing instructions brief every turn from the
+moment you put a conversation in it.
+
+Deleting a conversation is undoable — the record waits in **Settings → Trash**
+until you empty it.
+
 ## Install
 
-Download `Locust-<version>-setup.exe` from the
+Download **`Locust-Setup.exe`** from the
 [latest release](https://github.com/automatedworkflowllc-design/locust-releases/releases/latest)
-and run it.
+and run it. That name is version-stable and always the newest build, which is
+what [locust.lol](https://locust.lol) links; the `Locust-<version>-setup.exe`
+beside it is the same bytes under a name that says which build it is.
 
 **Windows x64 only today.** macOS and Linux exist in the build configuration
 but are not published, so if you are not on Windows there is nothing here you

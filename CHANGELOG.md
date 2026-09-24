@@ -11,6 +11,29 @@ Settings shows this file as What's new. An entry may group its changes under
 about when they arrive on it carries `<!-- big -->` on the line under its
 heading: the home screen then shows it once, as a splash.
 
+## 0.305.0 - 2026-09-23
+
+### Improved
+
+- **The home screen goes still when you leave it.** Its bots, the logo's
+  flicker and the little loops around them ran for as long as it was open --
+  roughly half of one processor core with the window in front, even with
+  nobody there. Now all of it rests once nothing has touched the window for
+  30 seconds, as the bots already did behind other windows, and wakes when
+  you move the mouse or press a key. While it moves, each bot and each loop
+  changes about 30 times a second rather than on every frame the screen
+  draws.
+- **Cleaner words under the machine:** one line where there were two
+  sentences.
+
+### Fixed
+
+- **Presence dots and the waiting ring sit on the bot.** They were placed
+  by the bot's box rather than by the bot, so on the home screen the dots sat
+  at mid height and the blue bot's ring rode high over its antenna. They are
+  placed from where each bot is actually drawn now: the dot on its lower-right
+  edge, the ring round the whole of it.
+
 ## 0.304.0 - 2026-09-23
 
 ### Improved

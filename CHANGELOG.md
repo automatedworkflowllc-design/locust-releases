@@ -11,6 +11,47 @@ Settings shows this file as What's new. An entry may group its changes under
 about when they arrive on it carries `<!-- big -->` on the line under its
 heading: the home screen then shows it once, as a splash.
 
+## 0.337.0 - 2026-09-24
+
+### Fixed
+
+- **Locust opens from your taskbar as your installed copy, every time.**
+  A development test could re-point the Start menu's Locust shortcut, which
+  the taskbar goes through, at a build folder. That can no longer happen,
+  and your installed copy puts the shortcut back if anything ever moves it.
+- **A message queued with a file keeps its file**, and the file leaves the
+  chat box with it instead of riding along on your next message.
+- **Changing one setting no longer resets others.** Turning Auto on reset
+  the layout, and other switches reset the send button's finish.
+- **"All of Wren's conversations" shows Wren's**, from a teammate's card.
+- **The Missions selection bar counts what Delete will delete.**
+- **A refused room task keeps what you typed**, and says why.
+- **A new file in the viewer opens on itself**, not on the last file's
+  version.
+- **A runtime that has not answered yet says so**, instead of asking you
+  to sign in.
+- **Headings like "Why C#" keep their last character.**
+- **Rooms nobody has posted to are listed newest first.**
+- **A routine saved from a message with a file is named after your
+  words**, not the attachment line.
+- **Replies cut off mid-word no longer lose their trailing s's.**
+- **Non-English text in connector approvals stays intact.**
+- **Stopping a run no longer flashes a console window** on Windows.
+- **A Codex run that fails before it starts says why**, instead of "the
+  runtime connection ended before the turn completed".
+- **A Codex CLI that cannot start is reported at once**, instead of after
+  a minute's wait.
+- **Closing the window while a run is starting stops it from starting.**
+- **Pruning old conversations deletes only what the preview listed**, and
+  a restored one comes back to its teammate.
+- **A crash while a teammate was sending a message no longer stops
+  teammates messaging each other** until a file is fixed by hand.
+- **An Update pressed while an automatic update runs installs once.**
+- **Coding agents installed under a folder with accented letters** are
+  recognised as in use, so they are not updated while running.
+- **If Antigravity starts but Locust cannot record it**, you are told it
+  is already working, so it is not started twice.
+
 ## 0.336.0 - 2026-09-24
 
 ### Fixed

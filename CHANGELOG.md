@@ -11,6 +11,34 @@ Settings shows this file as What's new. An entry may group its changes under
 about when they arrive on it carries `<!-- big -->` on the line under its
 heading: the home screen then shows it once, as a splash.
 
+## 0.372.0 - 2026-09-26
+
+### Improved
+
+- **Keep all, for a tidy you agree with.** A tidy pass on a busy folder can
+  leave ten suggestions waiting. "Keep all" answers them in one press, and
+  anything kept can still be put back: a merge or a change shows what it
+  was, and a forgotten memory waits seven days under Recently forgotten.
+- **A suggestion no longer wears an on/off switch.** Waiting suggestions
+  carried a kept memory's switch, drawn on but unusable. They now show the
+  same spark as the memory card in the conversation.
+
+### Fixed
+
+- **Tidy up no longer loses a teammate's suggestions.** Asked to tidy
+  memory, a teammate sometimes wrote its suggestions inside a code block,
+  the way the request's own example showed them, and every one was
+  dropped: you read "Here are my suggestions:" over an empty box, and
+  nothing reached the Memory screen. Suggestions are now read wherever they
+  are written, as a bulleted or numbered list too, and a line that still
+  cannot be read is said in the conversation instead of vanishing. A tidy
+  pass that puts nothing to you now says so under its reply.
+- **What is waiting for you comes first on the Memory screen**, above how
+  memory works: the place "answer it on the Memory screen" sends you.
+- **"Suggested N changes, waiting below" goes once they are answered.** It
+  stayed at the top of the Memory screen after every suggestion had been
+  kept or turned down.
+
 ## 0.371.0 - 2026-09-26
 
 ### New

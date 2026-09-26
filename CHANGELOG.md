@@ -11,6 +11,25 @@ Settings shows this file as What's new. An entry may group its changes under
 about when they arrive on it carries `<!-- big -->` on the line under its
 heading: the home screen then shows it once, as a splash.
 
+## 0.362.0 - 2026-09-26
+
+### Improved
+
+- **Colours in a palette show their colour.** A hex code in a table, in a
+  list or in bold text now has a swatch beside it, as it already did on its
+  own in backticks. Bold or italic text holding code no longer shows the
+  backticks as characters.
+- Iris, the designer in the Write & design team, now suggests a one-page
+  brand guide (palette, fonts and voice) instead of a web page. Locust never
+  runs what a teammate writes, so a web page opened as its source code; a
+  guide opens as a document you can read.
+
+### Fixed
+
+- The Artifacts tab said "A read-only mission produces none" under any reply
+  that changed no files, even one that was allowed to. It now says what is
+  true for that reply.
+
 ## 0.361.0 - 2026-09-26
 
 ### Improved

@@ -11,6 +11,26 @@ Settings shows this file as What's new. An entry may group its changes under
 about when they arrive on it carries `<!-- big -->` on the line under its
 heading: the home screen then shows it once, as a splash.
 
+## 0.366.0 - 2026-09-26
+
+### Improved
+
+- **Teammates working together read calmly.** When a teammate hands work to
+  others, the lines that say how it is going ("Waiting on Sable, Penny",
+  "Penny replied") are now quiet notes instead of amber warnings. Amber is
+  kept for something that did not happen or needs you.
+- A teammate answering on someone else's model now says so in plain words,
+  without a model's internal name, and tells you where to give them their
+  own. The strip above a conversation between teammates names models the
+  way the chat bar does.
+
+### Fixed
+
+- A teammate's question could show its choices with stray brackets, such as
+  "<option name>I'll supply my numbers". The choices now read as written.
+- The whole window could slide up a few pixels, title bar and all, when
+  something scrolled into view. It stays put now.
+
 ## 0.365.0 - 2026-09-26
 
 ### Fixed

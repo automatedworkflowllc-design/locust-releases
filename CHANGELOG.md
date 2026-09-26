@@ -11,6 +11,23 @@ Settings shows this file as What's new. An entry may group its changes under
 about when they arrive on it carries `<!-- big -->` on the line under its
 heading: the home screen then shows it once, as a splash.
 
+## 0.376.0 - 2026-09-26
+
+### New
+
+- **Notes on a teammate's changes.** Hover a line of a change and press
+  its +, and your note sits under that line. Notes wait as one tile in the
+  chat box, and your next message carries them all: each with its file,
+  its line and the line itself, so your teammate reads exactly what you
+  were looking at. Send them all at once, and your teammate isn't set off
+  after every thought.
+
+### Fixed
+
+- **Your message keeps its line breaks.** A message you wrote over several
+  lines showed as one run-on paragraph in its bubble. It now reads as you
+  typed it, as a room's posts always have.
+
 ## 0.375.0 - 2026-09-26
 
 ### Fixed

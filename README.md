@@ -12,16 +12,20 @@ is the right place for bugs and questions.**
 
 <table>
 <tr>
-<td><img src="assets/shots/01-home.png" alt="Home screen with four teammates, each on its own AI"><br><sub>Your team. Each teammate keeps its own AI and model.</sub></td>
+<td><img src="assets/shots/01-home.png" alt="Home screen with six teammates, each on its own AI"><br><sub>Your team. Each teammate keeps its own AI and model.</sub></td>
 <td><img src="assets/shots/02-model-picker.png" alt="The model picker with Claude Code and Codex models"><br><sub>One picker for the models your own accounts offer.</sub></td>
 </tr>
 <tr>
+<td><img src="assets/shots/03-run-in-progress.png" alt="A teammate working, with its plan card"><br><sub>Watch a teammate work, plan and all.</sub></td>
 <td><img src="assets/shots/04-approval.png" alt="An approval card before a command runs"><br><sub>In Approve each, nothing runs until you have seen the exact command and where it runs.</sub></td>
+</tr>
+<tr>
+<td><img src="assets/shots/05-hand-off.png" alt="A hand-off chain where a checker on a different AI approves"><br><sub>Hand-off chains: Wren (OpenCode) diagnoses, Atlas (Codex) checks the code and approves.</sub></td>
 <td><img src="assets/shots/06-finished.png" alt="The finished change with its diff and a new test"><br><sub>The change, the diff and the new test, right in the thread.</sub></td>
 </tr>
 </table>
 
-<sub>Screenshots from 0.437 on a demo profile. The models in the picker are what that account offers; yours come from your own accounts.</sub>
+<sub>Screenshots from 0.437 and 0.438 on a demo profile. The models in the picker are what that account offers; yours come from your own accounts.</sub>
 
 ## What a teammate is
 

@@ -11,6 +11,21 @@ Settings shows this file as What's new. An entry may group its changes under
 about when they arrive on it carries `<!-- big -->` on the line under its
 heading: the home screen then shows it once, as a splash.
 
+## 0.472.0 - 2026-09-29
+
+### Improved
+
+- **The sidebar is by folder again, in the folder look.** Each folder heading
+  has its folder icon and its name as the folder spells it, as before 0.465,
+  and a single folder is headed too. The old groups, retired in 0.460, are no
+  longer drawn; your groups file is left as it is.
+
+### Fixed
+
+- **A runtime that crashes says why.** When Codex's or OpenCode's background
+  server died mid-answer, the card quoted Locust's own sentence back as "the
+  runtime's last word". It now shows the last thing the runtime itself said.
+
 ## 0.471.0 - 2026-09-29
 
 ### Fixed

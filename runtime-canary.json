@@ -1,0 +1,11 @@
+{
+  "about": "What Locust's release check found: each new agent release run through one real turn and read by Locust. Installed copies hold back a version marked ok: false.",
+  "packages": {
+    "@openai/codex": {
+      "0.159.2": {
+        "ok": true,
+        "checkedAt": "2026-09-30T09:33:46.713Z"
+      }
+    }
+  }
+}

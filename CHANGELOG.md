@@ -11,6 +11,33 @@ Settings shows this file as What's new. An entry may group its changes under
 about when they arrive on it carries `<!-- big -->` on the line under its
 heading: the home screen then shows it once, as a splash.
 
+## 0.561.0 - 2026-10-03
+
+### Added
+
+- **Terminal faces.** Every teammate now wears a screen for a face, the way
+  Prompt does: a dark screen in its own colour, sized to its own shape, with
+  its eyes lit on it as code that says what it is doing. A bot with a mouth
+  has its mouth lit too. It is on by default; turn it off in Settings >
+  Appearance > Terminal faces and every teammate goes back to its own eyes.
+  The setting shows three bots wearing your choice beside it, and it is kept
+  across restarts.
+
+### Changed
+
+- **A teammate at work or in thought looks alert, not flat.** Working, its
+  prompt now has a solid block cursor that types in bursts and blinks.
+  Thinking, its eyes are round and wide open, looking up and about, then
+  bouncing in turn like a reply being typed. No more underscores and dashes.
+- **Teammates are drawn bigger where you watch them.** The thread's live
+  "Thinking..." row, the conversation header, the Team screen's cards, the
+  sidebar's faces and rail, a room's answers, and the faces beside names in
+  lists and pickers are all larger, each sized for what it is doing there,
+  and every row they sit in was measured to still fit.
+- **A screen's eyes stay on the screen.** When a teammate turns its head or
+  glances aside, its lit eyes now move within its screen instead of sliding
+  off the edge.
+
 ## 0.560.0 - 2026-10-03
 
 ### Changed

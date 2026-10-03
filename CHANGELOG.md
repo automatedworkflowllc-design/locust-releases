@@ -11,6 +11,45 @@ Settings shows this file as What's new. An entry may group its changes under
 about when they arrive on it carries `<!-- big -->` on the line under its
 heading: the home screen then shows it once, as a splash.
 
+## 0.566.0 - 2026-10-03
+
+### New
+
+- **Settings > AI agents says what GitHub Copilot can do.** When Copilot runs
+  a turn in Approve each, it tells Locust what it supports: continuing an
+  earlier session, pictures, sound or a file's contents in a message, and
+  connectors over the web. Its row now lists each as a plain yes or no, as
+  Copilot's own answer and from when. Nothing here changes what Locust lets
+  Copilot do: it is still offered no files and no terminal of its own.
+- **Settings > Connectors lists your connectors and how each is.** Each one
+  says Connected, Needs sign-in, Not working, Did not answer or Unknown, with
+  what to do about it ("Run /mcp in Claude Code and sign in to Notion") and
+  when it last worked. **Copy report** puts names, states, timings and hosts
+  on the clipboard for someone helping -- never a command, a key or a full
+  address. Locust never calls a connector's tools to test it.
+
+### Improved
+
+- **A connector check that takes too long says so.** When Claude Code's
+  connector check did not answer in 20 seconds, Locust quietly kept the last
+  list; Settings now says the check did not answer, while your teammates keep
+  using the connectors that last worked.
+- **Switching a conversation to another AI tells it what was actually done.**
+  The summary the new one starts from listed Antigravity's work as
+  `run_command: run_command` and `view_file: view_file`, forty times. Each
+  action is now named by the command it ran or the file it read or wrote.
+  Past the latest forty, the summary says how many earlier ones it leaves
+  out, rather than claiming they were never recorded.
+
+### Fixed
+
+- **A conversation you hand to another teammate takes the message box with
+  it.** After **Assign to** on the conversation you were looking at, your
+  reply still went to the teammate who had it before. They no longer owned
+  it, so it started them a new conversation instead of continuing this one.
+  The box now sends to whoever you assigned it to. If a reply ever would start
+  a new conversation, the box says so before you send.
+
 ## 0.565.0 - 2026-10-03
 
 ### Improved

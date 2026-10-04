@@ -6,6 +6,10 @@ Locust runs AI coding teammates against a folder on your machine. You choose
 the runtime, the model, and how much each teammate is allowed to do — and you
 bring your own accounts, keys or free tiers. It resells nobody's tokens.
 
+It drives the coding agents you already use: **Claude Code, Codex, Cursor,
+GitHub Copilot, OpenCode, Antigravity and Muse Code**, each on the models its
+own CLI offers.
+
 This repository carries the installers and the update feed. The source is not
 public yet, so **[Issues here](https://github.com/automatedworkflowllc-design/locust-releases/issues)
 is the right place for bugs and questions.**
@@ -25,7 +29,7 @@ is the right place for bugs and questions.**
 </tr>
 </table>
 
-<sub>Screenshots from 0.437 and 0.438 on a demo profile. The models in the picker are what that account offers; yours come from your own accounts.</sub>
+<sub>Screenshots from 0.437 and 0.438 on a demo profile; the app has moved on since (the Board, Compare, team cards that say where each teammate stands). The models in the picker are what that account offers; yours come from your own accounts.</sub>
 
 ## What a teammate is
 
@@ -46,6 +50,13 @@ on its own runtime, with a checker that must approve before the run counts.
 Each runtime's own `/` commands are in the menu (Claude Code, OpenCode, Codex),
 `@` attaches a project file, and up to eight runs can go at once.
 
+**Compare** gives one task to two or three models side by side, each in its
+own copy of the folder, or blind with the names hidden until you pick; keep the
+one you like. ([Three models building the same game, blind](https://locust.lol/arena/).)
+**The Board** shows every conversation in columns by what it needs from you,
+across every runtime at once. **Routines** run a teammate on a schedule, or when
+files in a folder change, and can keep going after the window is closed.
+
 Deleting a conversation is undoable — the record waits in **Settings → Trash**
 until you empty it.
 
@@ -57,15 +68,17 @@ and run it. That name is version-stable and always the newest build, which is
 what [locust.lol](https://locust.lol) links; the `Locust-<version>-setup.exe`
 beside it is the same bytes under a name that says which build it is.
 
-**Windows x64 only today.** macOS and Linux exist in the build configuration
-but are not published, so if you are not on Windows there is nothing here you
-can run yet. That is a real gap rather than an oversight, and it is the first
-thing an outside tester said about this page.
+**Windows x64** gets every release. **macOS** (Apple silicon and Intel,
+`Locust-<version>-mac-arm64.dmg` / `-mac-x64.dmg`) gets a build every few
+releases, so the newest Mac build can trail Windows; locust.lol always offers
+the newest one there is and says when it is older. Linux is not published.
 
 The build is **unsigned**. Windows SmartScreen will show a blue *"Windows
 protected your PC"* panel the first time — choose **More info → Run anyway**.
 Signing is deliberately not set up for a pre-release, so expect that warning
-on every fresh install until it is.
+on every fresh install until it is. On a Mac the build is not signed by Apple
+either: the first open asks you to allow it, in **System Settings → Privacy &
+Security → Open Anyway**.
 
 ## What you need besides the app
 
@@ -82,7 +95,7 @@ tier or a local model. It never means unmetered access to a paid plan.
 ## Updates
 
 The app asks this repository for the latest release when it launches and
-installs the update when you quit. `latest.yml` is the feed it reads; the
+installs the update when you quit. A Mac copy updates itself too. `latest.yml` is the feed it reads; the
 installer and its blockmap sit beside it in every release. Each release's
 notes say what changed.
 
@@ -91,4 +104,6 @@ notes say what changed.
 Pre-release, and it behaves like one. It is being tested in the open, and the
 release notes are written to be honest about what is fixed and what is not.
 If something is wrong, please file it — a report from someone who was not
-expecting the bug is worth more than any amount of self-testing.
+expecting the bug is worth more than any amount of self-testing. The app's **Send
+feedback** box fills in your version and system for you, and can open the
+issue here or save the whole report as a file to attach.

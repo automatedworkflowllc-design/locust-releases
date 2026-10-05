@@ -106,4 +106,5 @@ release notes are written to be honest about what is fixed and what is not.
 If something is wrong, please file it — a report from someone who was not
 expecting the bug is worth more than any amount of self-testing. The app's **Send
 feedback** box fills in your version and system for you, and can open the
-issue here or save the whole report as a file to attach.
+issue here or save the whole report as a file to attach. For anything you'd
+rather not post publicly, email **support@locust.lol**.

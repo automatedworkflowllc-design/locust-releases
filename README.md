@@ -10,9 +10,11 @@ It drives the coding agents you already use: **Claude Code, Codex, Cursor,
 GitHub Copilot, OpenCode, Antigravity and Muse Code**, each on the models its
 own CLI offers.
 
-This repository carries the installers and the update feed. The source is not
-public yet, so **[Issues here](https://github.com/automatedworkflowllc-design/locust-releases/issues)
-is the right place for bugs and questions.**
+This repository carries the installers and the update feed. The source is
+[automatedworkflowllc-design/locust-app](https://github.com/automatedworkflowllc-design/locust-app)
+(MIT), a mirror exported from development at each release.
+**[Issues here](https://github.com/automatedworkflowllc-design/locust-releases/issues)
+are the right place for bugs and questions.**
 
 <table>
 <tr>

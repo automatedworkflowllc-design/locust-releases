@@ -6,6 +6,12 @@
         "ok": true,
         "checkedAt": "2026-09-30T09:33:46.713Z"
       }
+    },
+    "@github/copilot": {
+      "1.0.93": {
+        "ok": true,
+        "checkedAt": "2026-10-07T19:04:03.767Z"
+      }
     }
   }
 }

@@ -11,6 +11,21 @@ Settings shows this file as What's new. An entry may group its changes under
 about when they arrive on it carries `<!-- big -->` on the line under its
 heading: the home screen then shows it once, as a splash.
 
+## 0.690.0 - 2026-10-07
+
+### Fixed
+
+- **A routine's time that passes while its last run is still going now says Missed.** Locust never starts a second copy of a routine over one that is still running. It used to drop that time without a word. The routine's card now says, for example, "Missed, 08:00 today" with Run now, the same as a time that passed while Locust was closed.
+- **Antigravity usage on Home is read only from agy 1.1.11 or newer.** Older versions could send `/usage` to the model as a message and spend a turn. On an older or unknown version, Home leaves the line out.
+- **A teammate's own branch starts more reliably.** On Windows, long project paths no longer stop it being made. A setup hook in your repository that fails after the branch is ready, such as Git LFS, no longer fails the teammate's start: Locust checks the branch is really there and usable first, and notes the hook's message in its log.
+
+## 0.689.0 - 2026-10-07
+
+### Fixed
+
+- **A model of your own no longer reads as free against a monthly limit.** A model you add in Settings reports no price, so its runs used to count as nothing, and a teammate with a $5.00 limit showed "$0.00 of $5.00" however much its provider billed. The card now counts those runs on their own line under the dollars, for example "$0.40 of $5.00" and then "2 runs with no price", and hovering that line says why. When you set a limit, it says that these runs are not counted.
+- **The voice glow rises with less voice.** Ordinary speech now lifts it about a quarter higher. Its highest point is unchanged, so it never covers more of the chat box than before.
+
 ## 0.688.0 - 2026-10-07
 
 ### Added

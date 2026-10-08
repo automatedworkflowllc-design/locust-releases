@@ -11,6 +11,13 @@ Settings shows this file as What's new. An entry may group its changes under
 about when they arrive on it carries `<!-- big -->` on the line under its
 heading: the home screen then shows it once, as a splash.
 
+## 0.701.0 - 2026-10-07
+
+### Fixed
+
+- **Claude on your own API key works in Your own models, and Test says so.** Anthropic's API speaks the same language as the OpenAI-style servers Locust already takes: add it in Settings, Your own models, with the address https://api.anthropic.com/v1, a Claude model such as claude-haiku-5-5, and your key. Its conversations already worked, but Test answered "400 Bad Request" because Anthropic wants one more detail when listing its models. Test now answers that it serves the model and can use tools.
+- **Reading a Claude cloud task in a folder Claude Code doesn't trust yet tells you what to do.** Newer Claude Code versions won't bring a cloud session into a folder until you have opened Claude Code there once and said you trust it. Locust only said "Claude Code did not bring the session in". It now says to open Claude Code in that folder once, answer its question, and check again.
+
 ## 0.700.0 - 2026-10-07
 
 ### Fixed

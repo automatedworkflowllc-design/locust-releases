@@ -11,6 +11,22 @@ Settings shows this file as What's new. An entry may group its changes under
 about when they arrive on it carries `<!-- big -->` on the line under its
 heading: the home screen then shows it once, as a splash.
 
+## 0.711.0 - 2026-10-09
+
+### New
+
+- **Claude Code teammates can search the web and open web pages.** In Auto they do it on their own. In every other mode each search or page waits for you on a card that shows the search words or the page's whole address, and runs only if you approve it.
+
+### Improved
+
+- **What it may do says, for every agent, whether it can use the web.** Codex, Copilot, OpenCode and Muse Code search and open pages with their own tools in every mode. Cursor Agent and Antigravity do only in Auto, because outside it their own rules refuse those tools, and the panel now says so instead of saying nothing. When Codex opens a page, its step reads "Opened" and the address rather than "Searched the web for" it.
+- **When a free model's provider is down, Locust moves on from it.** A run that failed because its free model was unavailable now offers to start again on a free model that answers. For the next six hours, or until that model answers again, Locust stops suggesting it: "Use a free model", the second model a comparison starts on, and the next model a failed run offers all pass it over. It stays in the model list if you want to pick it yourself.
+
+### Fixed
+
+- **A Claude Code teammate no longer stays "working" after it has answered.** If a command it started kept running after its final answer, the run stayed open until that command ended, which could be never. Locust now ends such a run a minute after the answer and counts it as completed.
+- **A Skills from GitHub keep that is refused leaves nothing behind.** When a file did not arrive as GitHub lists it, nothing was kept, as intended, but a hidden half-downloaded folder could stay in Locust's skill library. It is now removed every time.
+
 ## 0.710.0 - 2026-10-09
 
 ### New

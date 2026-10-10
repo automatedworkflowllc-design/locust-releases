@@ -11,6 +11,45 @@ Settings shows this file as What's new. An entry may group its changes under
 about when they arrive on it carries `<!-- big -->` on the line under its
 heading: the home screen then shows it once, as a splash.
 
+## 0.719.0 - 2026-10-10
+
+### New
+
+- **Connect your GitHub.** Settings › Connectors starts with GitHub: who you are signed in as, with GitHub's mark. Sign in with GitHub needs no terminal. Locust starts the GitHub CLI's own sign-in and shows its one-time code, and one press copies the code and opens GitHub's page in your browser. Locust keeps no token; the GitHub CLI keeps the sign-in where it always does.
+- **The pull request, in the conversation's header.** While the folder's branch has a pull request on GitHub, the header shows its number, whether it is open, a draft, merged or closed, and a dot for how its checks stand. Hover for the whole line; press it to open it on GitHub.
+
+### Improved
+
+- **Code in a reply is in colour.** Keywords, strings, numbers, functions and comments each have their own colour, in 31 languages, read with the same grammars VS Code uses. A block is coloured once it is finished, so nothing changes shape while you read it. A file you open from the conversation is coloured the same way, by its name.
+- **A teammate may close the test browser it started, found by its own profile.** Ending a browser by name is still refused. A command that finds the browser by name and narrows it to the teammate's own command line, such as its own profile folder, now runs when every window it matches is one a teammate started. If the filter also matches one of yours, it is refused and the teammate is told which. Process ids written into a loop, such as `for p in 101 102; do taskkill /PID $p; done`, are now checked too, the same as ids written one at a time.
+
+### Fixed
+
+A sweep through Locust's code turned up 24 mistakes; each is fixed and has a test so it stays fixed.
+
+- **Copilot teammates use the effort you pick.** The effort setting was not reaching Copilot, so every Copilot run used its default.
+- **A skill from a folder inside a GitHub repository installs from that folder**, not from the top of the repository.
+- **A message held for a busy teammate is never lost.** When two messages were waiting for the same teammate, only the first one reached it. Now each one does, and the conversation says so if a message cannot be delivered.
+- **Long answers and long waits come back whole.** A long Antigravity answer could stop partway through. A timer Antigravity set on a task that had already ended kept the run open. A Copilot run that reaches its turn or length limit while you work in it now says so and goes on to the messages you queued.
+- **Commands that end every copy of a program are named wherever they hide**: inside brackets, inside `$( )` or backticks, in a loop, or behind `timeout` or `nice`.
+- **Smaller fixes:**
+  - A very long prompt typed in the terminal is still read back.
+  - Very long status lines from Muse and Copilot are cut short.
+  - Teammates can reach a project's parent git folder on every platform.
+  - A task is matched to the room post that names it, even with punctuation in the way.
+  - A routine time that passed during a run across midnight is counted as missed.
+  - One damaged post no longer hides a whole room.
+  - A background Claude turn that is still working is shown as working.
+  - Empty Word and PowerPoint text boxes no longer swallow the words after them.
+  - A final line too large to keep no longer hides the answer before it.
+  - A check that cannot start no longer leaves a timer running.
+  - Allow rules ignore letter case only for Windows folders.
+  - Runtime updates compare beta versions correctly.
+  - A memory that cites a web address is no longer marked out of date.
+  - A saved record keeps code blocks exactly as they were written.
+  - A workroom's "+N more" counts only real entries.
+  - Antigravity projects on Mac and Linux keep their leading slash.
+
 ## 0.718.0 - 2026-10-10
 
 ### Fixed

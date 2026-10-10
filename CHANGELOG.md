@@ -11,6 +11,12 @@ Settings shows this file as What's new. An entry may group its changes under
 about when they arrive on it carries `<!-- big -->` on the line under its
 heading: the home screen then shows it once, as a splash.
 
+## 0.735.0 - 2026-10-10
+
+### Improved
+
+- **A command's approval card says "Unknown" once.** When Locust can't tell what an ordinary command sends or whether it can be undone, the card says so in one Effects row instead of two. A command that can reach the network still shows both rows.
+
 ## 0.734.0 - 2026-10-10
 
 ### Fixed
